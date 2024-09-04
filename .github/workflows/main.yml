@@ -20,9 +20,9 @@ jobs:
         run: echo "Hola mundo desde github actions."
 
       - name: Hola desde el ambiente Develop 👀
-        if: ${{github.ref -- 'refs/heads/develop'}}
+        if: ${{github.ref--'refs/heads/develop'}}
         run: echo "Hola desde la rama develop"
 
       - name: Hola desde el ambiente Main ✨
-        if: ${{github.ref -- 'refs/heads/main'}}
+        if: ${{github.ref--'refs/heads/main'}}
         run: echo "Hola desde la rama main"
