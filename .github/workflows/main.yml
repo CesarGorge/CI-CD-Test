@@ -1,0 +1,20 @@
+name: holaMundo
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - release
+      - hotfix
+
+jobs:
+  Saludos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repo
+        uses: actions/checkout@v2
+  
+      - name: Hola push
+        run: echo "Hola mundo desde github actions."
